@@ -12,6 +12,12 @@ public class HelloController {
         return "Hello from BridgeLabz";
     }
 
+    //UC2
+    @GetMapping("/hello/query")
+    public String sayHello(@RequestParam String name) {
+        return "Hello " + name + " from BridgeLabz";
+
+    }
 
 }
 
