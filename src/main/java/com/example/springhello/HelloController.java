@@ -19,5 +19,12 @@ public class HelloController {
 
     }
 
+    //UC3
+    @GetMapping("/hello/param/{name}")
+    public String sayHelloParam(@PathVariable String name) {
+        return "Hello " + name + " from BridgeLabz";
+    }
+
+
 }
 
